@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.util.StringUtils;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestClientResponseException;
@@ -78,7 +79,7 @@ public class RequestProcessor {
 	private void display(ResponseVO responseVO) {
 
 		System.out
-				.println("===============================================================================================");
+		.println("===============================================================================================");
 		System.out.println("\n");
 		System.out.println("**** LONG FILES ****");
 		this.show(responseVO.getLongFiles(), 0);
@@ -87,7 +88,7 @@ public class RequestProcessor {
 		this.show(responseVO.getShortFiles(), 0);
 		System.out.println("\n");
 		System.out
-				.println("===============================================================================================");
+		.println("===============================================================================================");
 	}
 
 	private void show(DirectoryStructure longFiles, int tabCount) {
@@ -114,8 +115,19 @@ public class RequestProcessor {
 						&& !wordsRepeatingMoreThan50Times.isEmpty()) {
 					wordMap = getLongWordCount(wordsRepeatingMoreThan50Times);
 				}
-				System.out.println(fileDetails.getFileName() + " "
-						+ fileDetails.getWordCount() + " " + wordMap);
+
+				if(StringUtils.isEmpty(wordMap)){
+
+					System.out.println(fileDetails.getFileName() + " "
+							+ fileDetails.getWordCount());
+				}else{
+
+					System.out.println(fileDetails.getFileName() + " "
+							+ fileDetails.getWordCount() + " " + wordMap.toString());
+				}
+
+				if(StringUtils.isEmpty(wordMap)){
+				}
 			}
 
 			List<DirectoryStructure> subDirectories = longFiles.getSubDirectories();
