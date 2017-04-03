@@ -24,16 +24,16 @@ instruction for installation:
 			Please enter service host port:
 			8080
 			Please enter service directory path
-			F:\\install\\workspace\\MyTestData
+			F:\\install\\workspace\\TestData
 
 			->we stared REST service in step 3 on localhost:8080 hence we entered host adress=localhost and host port=8080
-			->we have entered service directory path=F:\\install\\workspace\\MyTestData
+			->we have entered service directory path=F:\\install\\workspace\\TestData
 			  this client application will traverse through this directory and show output on console as below:
 			  
 				===============================================================================================
 
 				**** LONG FILES ****
-				MyTestData
+				TestData
 					PublicTasks
 						TestData
 							Germany.txt 29397 die 1151 bei 61 ist 179 den 377 dem 209 bis 86 sich 136 wurden 70 der 1244 des 292 zum 81 wurde 133 zur 68 etwa 58 das 330 durch 123 bundesrepublik 65 deutschen 158 im 382 in 654 deutsche 139 als 201 nicht 51 am 95 an 93 es 77 jahr 72 auf 147 einen 54 auch 127 einer 64 sind 128 zu 171 aus 84 deutschland 275 seit 75 prozent 55 deutschlands 51 ein 99 unter 84 wie 73 von 356 mit 235 für 137 über 61 und 994 nach 120 oder 75 eine 139 sowie 77 
@@ -48,7 +48,7 @@ instruction for installation:
 
 
 				**** SHORT FILES ****
-				MyTestData
+				TestData
 					PublicTasks
 						TestData
 							Andromeda.txt 307
@@ -75,14 +75,14 @@ Content-Type  : application/json;charset=UTF-8
 sample JSON request:
 
 {
-	"directoryPath" : "F:\\install\\workspace\\MyTestData"
+	"directoryPath" : "F:\\install\\workspace\\TestData"
 }
 
 sample JSON response:
 
 {
     "longFiles": {
-        "directoryName": "MyTestData",
+        "directoryName": "TestData",
         "files": [],
         "subDirectories": [
             {
@@ -94,7 +94,7 @@ sample JSON response:
                         "files": [
                             {
                                 "fileName": "Germany.txt",
-                                "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\Germany.txt",
+                                "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\Germany.txt",
                                 "wordCount": 29397,
                                 "wordsRepeatingMoreThan50Times": {
                                     "die": 1151,
@@ -156,7 +156,7 @@ sample JSON response:
                                 "files": [
                                     {
                                         "fileName": "Berlin.txt",
-                                        "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\a\\Berlin.txt",
+                                        "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\a\\Berlin.txt",
                                         "wordCount": 15581,
                                         "wordsRepeatingMoreThan50Times": {
                                             "die": 556,
@@ -200,7 +200,7 @@ sample JSON response:
                                         "files": [
                                             {
                                                 "fileName": "e.txt",
-                                                "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\a\\b\\e.txt",
+                                                "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\a\\b\\e.txt",
                                                 "wordCount": 1260,
                                                 "wordsRepeatingMoreThan50Times": {
                                                     "the": 115,
@@ -210,7 +210,7 @@ sample JSON response:
                                             },
                                             {
                                                 "fileName": "lamar.txt",
-                                                "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\a\\b\\lamar.txt",
+                                                "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\a\\b\\lamar.txt",
                                                 "wordCount": 1921,
                                                 "wordsRepeatingMoreThan50Times": {
                                                     "the": 119,
@@ -221,7 +221,7 @@ sample JSON response:
                                             },
                                             {
                                                 "fileName": "Wigan.txt",
-                                                "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\a\\b\\Wigan.txt",
+                                                "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\a\\b\\Wigan.txt",
                                                 "wordCount": 5485,
                                                 "wordsRepeatingMoreThan50Times": {
                                                     "a": 106,
@@ -248,7 +248,7 @@ sample JSON response:
                                                 "files": [
                                                     {
                                                         "fileName": "Buchdruck.txt",
-                                                        "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\a\\b\\d\\Buchdruck.txt",
+                                                        "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\a\\b\\d\\Buchdruck.txt",
                                                         "wordCount": 3787,
                                                         "wordsRepeatingMoreThan50Times": {
                                                             "der": 177,
@@ -272,7 +272,7 @@ sample JSON response:
         ]
     },
     "shortFiles": {
-        "directoryName": "MyTestData",
+        "directoryName": "TestData",
         "files": [],
         "subDirectories": [
             {
@@ -284,19 +284,19 @@ sample JSON response:
                         "files": [
                             {
                                 "fileName": "Andromeda.txt",
-                                "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\Andromeda.txt",
+                                "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\Andromeda.txt",
                                 "wordCount": 307,
                                 "wordsRepeatingMoreThan50Times": {}
                             },
                             {
                                 "fileName": "Mordellistena.txt",
-                                "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\Mordellistena.txt",
+                                "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\Mordellistena.txt",
                                 "wordCount": 49,
                                 "wordsRepeatingMoreThan50Times": {}
                             },
                             {
                                 "fileName": "Reynolds.txt",
-                                "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\Reynolds.txt",
+                                "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\Reynolds.txt",
                                 "wordCount": 892,
                                 "wordsRepeatingMoreThan50Times": {
                                     "the": 60
@@ -309,7 +309,7 @@ sample JSON response:
                                 "files": [
                                     {
                                         "fileName": "Lomond.txt",
-                                        "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\a\\Lomond.txt",
+                                        "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\a\\Lomond.txt",
                                         "wordCount": 142,
                                         "wordsRepeatingMoreThan50Times": {}
                                     }
@@ -324,7 +324,7 @@ sample JSON response:
                                                 "files": [
                                                     {
                                                         "fileName": "Talmadge.txt",
-                                                        "absoluteFilePath": "F:\\install\\workspace\\MyTestData\\PublicTasks\\TestData\\a\\b\\d\\Talmadge.txt",
+                                                        "absoluteFilePath": "F:\\install\\workspace\\TestData\\PublicTasks\\TestData\\a\\b\\d\\Talmadge.txt",
                                                         "wordCount": 170,
                                                         "wordsRepeatingMoreThan50Times": {}
                                                     }
