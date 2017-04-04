@@ -112,7 +112,7 @@ public class DirectoryTraverseServiceControllerTest extends BootLoaderClass {
 
 		RequestVO requestVO = new RequestVO();
 		String workSpaceDirPath = System.getProperty("user.dir");
-		String directoryPath = workSpaceDirPath + "\\src\\test\\sources\\MyTestData";
+		String directoryPath = workSpaceDirPath + "/sr/test/sources/MyTestData";
 		requestVO.setDirectoryPath(directoryPath);
 		Mockito.when(requestValidator.validateDirectoryPath(directoryPath)).thenReturn(false);
 
