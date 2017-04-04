@@ -33,7 +33,7 @@ public class DirectoryTraverseServiceHelperTest {
 	public void testLongFiles() throws IOException {
 
 		String workSpaceDirPath = System.getProperty("user.dir");
-		String directoryPath = workSpaceDirPath + "\\src\\test\\sources\\MyTestData";
+		String directoryPath = workSpaceDirPath + "/src/test/sources/MyTestData";
 
 		File directory = new File(directoryPath);
 		String fileType = ApplicationConstants.LONG_FILES;
@@ -64,7 +64,7 @@ public class DirectoryTraverseServiceHelperTest {
 	public void testShortFiles() throws IOException {
 
 		String workSpaceDirPath = System.getProperty("user.dir");
-		String directoryPath = workSpaceDirPath + "\\src\\test\\sources\\MyTestData\\Folder01";
+		String directoryPath = workSpaceDirPath + "/src/test/sources/MyTestData/Folder01";
 
 		File directory = new File(directoryPath);
 		String fileType = ApplicationConstants.SHORT_FILES;
